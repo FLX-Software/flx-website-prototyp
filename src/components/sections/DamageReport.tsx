@@ -24,14 +24,27 @@ export function DamageReport() {
   const [previewOpen, setPreviewOpen] = useState(false);
 
   useEffect(() => {
-    setForm((prev) => ({
-      ...prev,
+    setForm({
       device: d.initial.device,
       customer: d.initial.customer,
+      date: "2026-10-28",
       description: d.initial.description,
       status: d.statuses[0],
-    }));
-  }, [locale, d.initial.customer, d.initial.description, d.initial.device, d.statuses]);
+    });
+  }, [locale, d]);
+
+  useEffect(() => {
+    if (!previewOpen) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setPreviewOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [previewOpen]);
 
   const update = (key: keyof FormState, value: string) => {
     setForm((prev) => ({ ...prev, [key]: value }));
@@ -54,10 +67,7 @@ export function DamageReport() {
 
         <div className="panel overflow-hidden">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-3">
-            <div>
-              <p className="m-0 font-heading font-semibold">{d.formTitle}</p>
-              <p className="m-0 text-sm text-[var(--color-muted)]">{d.formSubtitle}</p>
-            </div>
+            <p className="m-0 font-heading font-semibold">{d.formTitle}</p>
             <span className="example-badge">{d.badge}</span>
           </div>
 
@@ -134,7 +144,6 @@ export function DamageReport() {
                     </div>
                   ))}
                 </div>
-                <p className="mb-0 mt-2 text-sm text-[var(--color-muted)]">{d.photoNote}</p>
               </div>
 
               <button type="submit" className="btn btn-primary justify-self-start">
@@ -144,12 +153,11 @@ export function DamageReport() {
 
             <aside className="border-t border-[var(--color-border)] bg-[var(--color-blue-surface)] p-5 md:border-l md:border-t-0 md:p-7">
               <p className="eyebrow">{d.flowEyebrow}</p>
-              <ol className="m-0 flex list-decimal flex-col gap-3 pl-5 text-[var(--color-muted)]">
+              <ol className="m-0 flex list-decimal flex-col gap-3 pl-5 text-[var(--color-text)]">
                 {d.steps.map((step) => (
                   <li key={step}>{step}</li>
                 ))}
               </ol>
-              <p className="mb-0 mt-6 text-[var(--color-muted)]">{d.flowNote}</p>
             </aside>
           </div>
         </div>
@@ -176,14 +184,14 @@ export function DamageReport() {
               </div>
               <button
                 type="button"
-                className="btn btn-secondary min-h-10 px-3"
+                className="btn btn-secondary min-h-11 px-3"
                 onClick={() => setPreviewOpen(false)}
                 aria-label={d.closeAria}
               >
                 {d.close}
               </button>
             </div>
-            <p className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-3 text-sm text-[var(--color-muted)]">
+            <p className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-3 text-sm">
               {d.previewNote}
             </p>
             <div className="mt-4 space-y-2 text-[0.98rem]">
@@ -202,7 +210,7 @@ export function DamageReport() {
               <p className="m-0">
                 <strong>{d.description}:</strong> {form.description}
               </p>
-              <p className="m-0 text-[var(--color-muted)]">{d.photosAssigned}</p>
+              <p className="m-0">{d.photosAssigned}</p>
             </div>
           </div>
         </div>

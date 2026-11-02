@@ -111,7 +111,37 @@ export function PlatformMap() {
 
   return (
     <figure className="hub-map">
-      <div className="hub-map-stage">
+      <div className="hub-map-mobile" aria-label="FLX">
+        {branches.map((branch) => {
+          const open = openId === branch.id;
+          return (
+            <details
+              key={`mobile-${branch.id}`}
+              className="hub-mobile-item"
+              open={open}
+              onToggle={(event) => {
+                const el = event.currentTarget;
+                if (el.open) setOpenId(branch.id);
+                else setOpenId((current) => (current === branch.id ? null : current));
+              }}
+            >
+              <summary>
+                <span className="hub-node-icon">
+                  <HubIcon id={branch.id} />
+                </span>
+                <span className="hub-node-title">{branch.title}</span>
+              </summary>
+              <ul className="hub-node-list">
+                {branch.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </details>
+          );
+        })}
+      </div>
+
+      <div className="hub-map-stage" aria-hidden={false}>
         <div className="hub-map-atmosphere" aria-hidden="true" />
 
         <svg
@@ -221,8 +251,6 @@ export function PlatformMap() {
           );
         })}
       </div>
-
-      <figcaption>{t.hub.caption}</figcaption>
     </figure>
   );
 }

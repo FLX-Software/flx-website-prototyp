@@ -4,7 +4,7 @@ export const dictionaries = {
   de: {
     skip: "Zum Inhalt springen",
     header: {
-      home: "FLX Software – Startseite",
+      home: "FLX Software, Startseite",
       navAria: "Hauptnavigation",
       mobileAria: "Mobilnavigation",
       openMenu: "Menü öffnen",
@@ -15,15 +15,13 @@ export const dictionaries = {
         { href: "#loesungen", label: "Lösungen" },
         { href: "#ablauf", label: "Ablauf" },
         { href: "#ueber-uns", label: "Über uns" },
-        { href: "#erp", label: "ERP" },
         { href: "#kontakt", label: "Kontakt" },
       ],
       mobileLinks: [
         { href: "#loesungen", label: "Lösungen" },
-        { href: "#ablauf", label: "So funktioniert FLX" },
+        { href: "#ablauf", label: "So arbeiten wir" },
+        { href: "#moeglichkeiten", label: "Schnittstellen & KI" },
         { href: "#ueber-uns", label: "Über uns" },
-        { href: "#erp", label: "ERP-Anbindung" },
-        { href: "#ki", label: "Betriebsinterne KI" },
         { href: "#kontakt", label: "Kontakt" },
       ],
     },
@@ -33,35 +31,33 @@ export const dictionaries = {
       en: "Englisch",
     },
     hero: {
-      eyebrow: "Individuelle Software für Ihren Betrieb",
-      titleLine1: "Ihr Betrieb.",
+      eyebrow: "Individuelle Software für Ihr Unternehmen",
+      titleLine1: "Ihr Unternehmen.",
       titleLine2: "Zentral verbunden.",
       lead:
-        "Wir verbinden Menschen, Informationen und Arbeitsabläufe in einer individuellen Software. Für einzelne Abteilungen oder Ihr gesamtes Unternehmen – mit Anbindung an Ihr bestehendes ERP und auf Wunsch mit betriebsinterner KI.",
+        "Wir entwickeln individuelle Software, die Menschen, Informationen und Arbeitsabläufe zusammenbringt. Für einzelne Abteilungen oder Ihr gesamtes Unternehmen, abgestimmt auf Ihre bestehenden Programme.",
       ctaPrimary: "Projekt besprechen",
       ctaSecondary: "Lösungen entdecken",
       visionAria: "FLX als Zentrum vernetzter Abläufe",
-      sourceLabel: "Im Betrieb",
-      sourceCaption: "Eine Situation. Viele Informationen.",
+      sourceLabel: "Im Alltag",
       sourceItems: [
         "Angaben in Excel-Listen",
         "Fotos auf dem Handy",
         "Absprachen per E-Mail",
       ],
-      hubCaption: "Zentrum Ihres Betriebs",
+      hubCaption: "Zentrum Ihres Unternehmens",
       destLabel: "Für Ihr Team",
       destItems: [
         "Abläufe verbunden",
         "Informationen gebündelt",
         "Gezielt weiterarbeiten",
       ],
-      destCaption: "Ein klares Bild. Der nächste Schritt.",
     },
     problem: {
       eyebrow: "Problem und Nutzen",
       title: "Weniger Insellösungen. Mehr Überblick.",
       lead:
-        "Viele Betriebe verteilen ihre tägliche Arbeit auf Excel-Listen, Aufgabenplaner, Word-Dokumente und E-Mail-Verläufe. FLX führt passende Arbeitsabläufe zusammen – ohne jedes bestehende Programm pauschal zu ersetzen.",
+        "Viele Unternehmen verteilen ihre tägliche Arbeit auf Excel-Listen, Aufgabenplaner, Word-Dokumente und E-Mail-Verläufe. FLX führt passende Arbeitsabläufe zusammen, ohne jedes bestehende Programm pauschal zu ersetzen.",
       beforeTitle: "Vorher",
       afterTitle: "Mit FLX",
       before: [
@@ -76,15 +72,12 @@ export const dictionaries = {
         "Aufgaben und Kommunikation",
         "Fertiges PDF im Unternehmensdesign",
       ],
-      afterNote:
-        "Aufgaben, Kommunikation und Dokumentation an einem Ort – vom manuellen Arbeitsschritt zum durchgängigen digitalen Ablauf.",
     },
     departments: {
       eyebrow: "Vernetzte Unternehmensbereiche",
-      title: "Ein Bereich oder der ganze Betrieb.",
-      lead: "Sie bestimmen den Umfang: zuerst nur Service, einzelne Abläufe – oder mehrere Abteilungen auf einer gemeinsamen Plattform.",
+      title: "Ein Bereich oder das ganze Unternehmen.",
+      lead: "Sie bestimmen den Umfang: zuerst nur Service, einzelne Abläufe oder mehrere Abteilungen auf einer gemeinsamen Plattform.",
       tablist: "Unternehmensbereiche",
-      note: "Nicht jeder Kunde braucht die gesamte Plattform. FLX kann gezielt für einen Bereich oder für mehrere miteinander verbundene Abteilungen umgesetzt werden.",
       items: [
         {
           id: "fertigung",
@@ -124,8 +117,6 @@ export const dictionaries = {
       ],
     },
     hub: {
-      caption:
-        "Alles läuft über FLX – auf einen Bereich zeigen, um die Unterpunkte zu öffnen.",
       branches: [
         {
           id: "abteilungen",
@@ -163,28 +154,28 @@ export const dictionaries = {
         {
           id: "systeme",
           title: "Systeme",
-          items: ["ERP-Anbindung", "Schnittstellen", "Bestehende Programme"],
+          items: ["Schnittstellen", "Bestehende Programme", "Datenübernahme"],
         },
         {
           id: "ki",
-          title: "KI",
-          items: ["Betriebsinterne KI", "Wissen & Analysen", "Dokumentenhilfe"],
+          title: "Erweiterungen",
+          items: ["Optionale KI", "Wissen & Analysen", "Dokumentenhilfe"],
         },
       ],
     },
     solutions: {
       eyebrow: "Lösungen",
-      title: "Drei klare Leistungsbereiche.",
-      lead: "Keine starren Standardpakete: FLX richtet sich nach Ihren Abläufen. ERP-Anbindungen planen wir zusätzlich anhand Ihrer Schnittstellen.",
+      title: "Individuelle Software für Ihren Alltag.",
+      lead: "FLX Software entwickelt maßgeschneiderte Anwendungen für Unternehmen. Keine starren Standardpakete, sondern Lösungen, die zu Ihren Abläufen passen.",
       items: [
         {
           id: "software",
           title: "Individuelle Unternehmenssoftware",
-          text: "Eine gemeinsame Arbeitsplattform für Aufgaben, Termine, Kommunikation und Dokumentation – passend zu Ihrem Projekt zusammengestellt.",
+          text: "Webanwendungen, interne Verwaltungstools und Arbeitsplattformen für Aufgaben, Termine, Kommunikation und Dokumentation, passend zu Ihrem Projekt zusammengestellt.",
           points: [
+            "Kunden- und Auftragsverwaltung",
             "Aufgaben zuweisen und Stände sichtbar machen",
             "Arbeits- und Einsatzpläne organisieren",
-            "Dokumente und Bilder zu Vorgängen bündeln",
             "Rollenbezogene Übersichten für Team und Führung",
           ],
           visualLabel: "Arbeitsplattform",
@@ -216,33 +207,32 @@ export const dictionaries = {
           reverse: true,
         },
         {
-          id: "ki-teaser",
-          title: "Betriebsinterne KI",
-          text: "Individuell eingerichtete KI für freigegebenes Unternehmenswissen – auf Wunsch vollständig lokal, ohne externe KI-Dienste.",
+          id: "anwendungen",
+          title: "Anwendungen für spezielle Anforderungen",
+          text: "Wenn Standardsoftware nicht passt, bauen wir die passende Anwendung. Von internen Tools bis zu digitalen Abläufen für konkrete Fachbereiche.",
           points: [
-            "Dokumente analysieren und zusammenfassen",
-            "Interne Anweisungen durchsuchen",
-            "ERP-Daten bei Anbindung nutzbar machen",
-            "Auch unabhängig von der übrigen Plattform",
+            "Individuelle Webanwendungen",
+            "Interne Verwaltung und Dokumentation",
+            "Unterstützung bestehender Arbeitsabläufe",
+            "Schrittweise erweiterbar",
           ],
-          visualLabel: "Interne Wissenshilfe",
+          visualLabel: "Projektumfang",
           visualLines: [
-            "Nur freigegebene Quellen",
-            "Lokaler Betrieb möglich",
-            "Rechte beachten",
-            "Antwort fachlich prüfen",
+            "Anforderung klären",
+            "Ablauf abbilden",
+            "Software entwickeln",
+            "Im Alltag einführen",
           ],
-          cta: { href: "#ki", label: "Mehr zur betriebsinternen KI" },
+          cta: { href: "#moeglichkeiten", label: "Schnittstellen & optionale KI" },
         },
       ],
     },
     damage: {
       eyebrow: "Konkretes Beispiel",
       title: "Vom Schaden zum fertigen Bericht.",
-      lead: "Angaben erfassen, Bilder ergänzen, PDF erzeugen – in einem durchgängigen Ablauf. Dasselbe Prinzip gilt für Service-, Montage-, Übergabe-, Wartungs- und Prüfberichte.",
+      lead: "Angaben erfassen, Bilder ergänzen, PDF erzeugen: in einem durchgängigen Ablauf. Dasselbe Prinzip gilt für Service-, Montage-, Übergabe-, Wartungs- und Prüfberichte.",
       formTitle: "Schadensmeldung",
-      formSubtitle: "Geführter Ablauf · Vorgang zuordnen",
-      badge: "Beispielansicht",
+      badge: "Demo",
       device: "Gerät",
       customer: "Kunde",
       date: "Rückgabedatum",
@@ -252,8 +242,6 @@ export const dictionaries = {
       photos: "Fotos",
       photoLabels: ["Detail Gehäuse", "Klemmbereich", "Übersicht"],
       exampleImage: "Beispielbild",
-      photoNote:
-        "Erfundene Beispieldaten. Vorhandene Geräte- und Kundendaten können bei entsprechender Anbindung übernommen werden.",
       submit: "PDF erzeugen",
       flowEyebrow: "Ablauf",
       steps: [
@@ -264,14 +252,12 @@ export const dictionaries = {
         "PDF erzeugen",
         "Bericht versenden oder ausdrucken",
       ],
-      flowNote:
-        "Die Meldung mit Bildern und Bericht bleibt dem Vorgang zugeordnet – nachvollziehbar und einheitlich formatiert.",
-      previewBadge: "Beispielvorschau",
+      previewBadge: "Demo",
       previewTitle: "Schadensbericht (Simulation)",
       close: "Schließen",
       closeAria: "Vorschau schließen",
       previewNote:
-        "Dies ist eine simulierte Vorschau. Es wird keine Datei erzeugt und kein E-Mail-Versand ausgelöst.",
+        "Simulierte Vorschau. Es wird keine Datei erzeugt und kein E-Mail-Versand ausgelöst.",
       photosAssigned: "Fotos: 3 Beispielbilder dem Vorgang zugeordnet",
       initial: {
         device: "Zange ZX-240",
@@ -280,60 +266,47 @@ export const dictionaries = {
           "Gehäuse beschädigt, Klemmkraft eingeschränkt. Gerät nach Kundeneinsatz zurückgenommen.",
       },
     },
-    erp: {
-      eyebrow: "ERP-Anbindung",
-      title: "Ihr ERP bleibt. Ihre Abläufe werden vernetzt.",
-      lead: "FLX entwickelt aktuell kein eigenes ERP-System. Bestehende Systeme bleiben erhalten und können über geeignete Schnittstellen angebunden werden.",
-      note: "Konkrete Integrationen hängen vom vorhandenen System und dessen Schnittstellen ab. Den Umfang des Datenaustauschs planen wir gemeinsam.",
-      existingErp: "Bestehendes ERP",
-      interfaces: "Schnittstellen / Datenflüsse",
-      platform: "FLX Arbeitsplattform",
-      areas: ["Service", "Montage", "Lager", "Fertigung", "Vertrieb", "Führung"],
-      flows: [
-        "Vorhandene Daten in betrieblichen Abläufen nutzen",
-        "Doppelte Dateneingaben reduzieren",
-        "Informationen dort bereitstellen, wo Mitarbeitende sie brauchen",
-        "Medienbrüche und manuelles Übertragen verringern",
-        "Je nach Schnittstelle Daten übernehmen und zurückschreiben",
+    extras: {
+      eyebrow: "Zusätzliche Möglichkeiten",
+      title: "Schnittstellen und optionale KI.",
+      lead: "Auf Wunsch integrieren wir KI-Funktionen oder entwickeln Schnittstellen zu Ihren bestehenden Programmen. Ob ERP-System, Warenwirtschaft, CRM oder andere Software: Wir prüfen, wie sich die Anwendungen sinnvoll verbinden lassen.",
+      interfaceTitle: "Mögliche Anbindungen",
+      interfaces: [
+        "ERP-Systeme",
+        "Warenwirtschaft",
+        "CRM",
+        "Dokumentenmanagement",
+        "Weitere vorhandene Anwendungen",
       ],
-    },
-    ai: {
-      eyebrow: "Betriebsinterne KI",
-      title: "KI, die mit Ihrem Unternehmenswissen arbeitet.",
-      lead: "Individuell eingerichtet für freigegebene Daten und Aufgaben. Auf Wunsch vollständig lokal – ohne externe KI-Dienste.",
-      quote: "„Ihr Unternehmenswissen. Ihre Infrastruktur. Ihre interne KI.“",
-      capabilities: [
-        "Texte und Dokumente analysieren",
-        "Wichtige Inhalte herausarbeiten und zusammenfassen",
-        "Arbeitsanweisungen und Unternehmenswissen durchsuchen",
-        "Fragen zu freigegebenen Informationen beantworten",
-        "Daten aus einem angebundenen ERP nutzbar machen",
-        "Auch als eigenständige Lösung ohne gesamte Plattform",
+      aiTitle: "Optionale KI-Funktionen",
+      aiText:
+        "Wenn es zu Ihrem Projekt passt, können wir KI-Funktionen einrichten, zum Beispiel für freigegebenes Unternehmenswissen. Auf Wunsch auch lokal, ohne externe KI-Dienste.",
+      aiPoints: [
+        "Dokumente zusammenfassen und durchsuchen",
+        "Interne Anweisungen nutzbar machen",
+        "Auch als Ergänzung zu einer bestehenden Anwendung",
       ],
-      disclaimer:
-        "Zugriffsrechte werden berücksichtigt. KI-Antworten sind nicht grundsätzlich fehlerfrei. FLX trainiert keine eigenen Basismodelle von Grund auf – es geht um individuell eingerichtete und integrierte Lösungen.",
-      helperTitle: "Interne Wissenshilfe",
+      helperTitle: "Beispiel: Wissenshilfe",
       demo: "Demo",
+      simulatedLabel: "Simulierte Beispielantwort",
       example: "Beispiel",
       question: "Frage",
       answer: "Antwort",
-      demoNote:
-        "Marketing-Demo ohne Upload echter Unternehmensdaten und ohne kostenpflichtige KI-Aufrufe.",
       demos: [
         {
           q: "Welche Schritte gelten bei einer Geräterückgabe mit Schaden?",
-          a: "Beispielantwort: Zuerst den Vorgang öffnen, Schaden und Bilder erfassen, Bericht erzeugen und dem Vorgang zuordnen. Freigegebene Arbeitsanweisungen Ihres Betriebs würden hier als Grundlage dienen.",
+          a: "Zuerst den Vorgang öffnen, Schaden und Bilder erfassen, Bericht erzeugen und dem Vorgang zuordnen. Freigegebene Arbeitsanweisungen Ihres Unternehmens würden hier als Grundlage dienen.",
         },
         {
           q: "Fasse den letzten Wartungsbericht zusammen.",
-          a: "Beispielantwort: Die KI fasst freigegebene Dokumente zusammen und hebt offene Punkte hervor. Antworten können unvollständig oder fehlerhaft sein und ersetzen keine fachliche Prüfung.",
+          a: "Die KI fasst freigegebene Dokumente zusammen und hebt offene Punkte hervor. Antworten können unvollständig oder fehlerhaft sein und ersetzen keine fachliche Prüfung.",
         },
       ],
     },
     collab: {
       eyebrow: "Zusammenarbeit",
       title: "So entsteht Ihre Lösung.",
-      lead: "Klare Schritte – vom Verständnis Ihrer Abläufe bis zur Einführung im Betrieb.",
+      lead: "Klare Schritte, vom Verständnis Ihrer Abläufe bis zur Einführung im Unternehmen.",
       step: "Schritt",
       steps: [
         {
@@ -342,7 +315,7 @@ export const dictionaries = {
         },
         {
           title: "Lösung und Schnittstellen planen",
-          text: "Gemeinsam legen wir Umfang, Prioritäten und mögliche ERP-Anbindungen anhand verfügbarer Schnittstellen fest.",
+          text: "Gemeinsam legen wir Umfang, Prioritäten und mögliche Anbindungen an Ihre vorhandenen Systeme fest.",
         },
         {
           title: "Software entwickeln und abstimmen",
@@ -350,7 +323,7 @@ export const dictionaries = {
         },
         {
           title: "Einführen und bei Bedarf erweitern",
-          text: "Nach der Einführung kann FLX um weitere Bereiche, Formulare oder eine betriebsinterne KI ergänzt werden.",
+          text: "Nach der Einführung kann die Software um weitere Bereiche, Formulare oder optionale KI-Funktionen ergänzt werden.",
         },
       ],
     },
@@ -359,7 +332,7 @@ export const dictionaries = {
       title: "Persönlich. Nah. Lösungsorientiert.",
       paragraphs: [
         "Wir entwickeln digitale Lösungen, die nicht nur modern aussehen, sondern im Alltag wirklich funktionieren.",
-        "Seit 2022 arbeiten wir an Web-Apps, mobilen Anwendungen und individuellen Softwarelösungen für regionale Unternehmen. Dabei legen wir Wert auf einfache Bedienung, klare Strukturen und Lösungen, die genau zu den Abläufen des jeweiligen Betriebs passen.",
+        "Seit 2022 arbeiten wir an Web-Apps, mobilen Anwendungen und individueller Software für regionale Unternehmen. Dabei legen wir Wert auf einfache Bedienung, klare Strukturen und Lösungen, die genau zu den Abläufen des jeweiligen Unternehmens passen.",
         "Statt Standardsoftware von der Stange setzen wir auf persönliche Zusammenarbeit, kurze Wege und langfristige Betreuung.",
       ],
       photoAlt: "Die Geschäftsführer von FLX Software",
@@ -370,8 +343,8 @@ export const dictionaries = {
       title: "Häufige Fragen.",
       items: [
         {
-          q: "Müssen wir unser bestehendes ERP ersetzen?",
-          a: "Nein. FLX entwickelt aktuell kein eigenes ERP. Bestehende Systeme können über geeignete Schnittstellen angebunden werden. Der konkrete Datenaustausch hängt von Ihrem System und dessen Schnittstellen ab.",
+          q: "Welche Art von Software entwickeln Sie?",
+          a: "Individuelle Software für Unternehmen: Webanwendungen, interne Tools, digitale Formulare, Dokumentenerstellung und Anwendungen für konkrete Arbeitsabläufe. Der Umfang richtet sich nach Ihrem Projekt.",
         },
         {
           q: "Können wir mit nur einer Abteilung starten?",
@@ -379,23 +352,23 @@ export const dictionaries = {
         },
         {
           q: "Wird die Software an unsere Abläufe angepasst?",
-          a: "Ja. FLX wird individuell auf Ihre Abläufe und Anforderungen abgestimmt – nicht als starres Standardprodukt mit fest vorgegebenen Paketen.",
+          a: "Ja. FLX wird individuell auf Ihre Abläufe und Anforderungen abgestimmt, nicht als starres Standardprodukt mit fest vorgegebenen Paketen.",
         },
         {
           q: "Können aus Formularen automatisch PDF-Dokumente entstehen?",
           a: "Ja. Aus erfassten Angaben, Bildern und ergänzenden Informationen kann ein fertig formatiertes PDF im Unternehmensdesign erzeugt und dem Vorgang zugeordnet werden.",
         },
         {
-          q: "Kann die KI vollständig auf unserer eigenen Hardware laufen?",
-          a: "Ja, auf Wunsch. Die betriebsinterne KI kann lokal betrieben werden – ohne externe KI-Dienste. Zugriffsrechte und freigegebene Datenquellen werden dabei berücksichtigt.",
+          q: "Können bestehende Programme angebunden werden?",
+          a: "Ja, sofern geeignete Schnittstellen vorhanden sind. Das können ERP-Systeme, Warenwirtschaft, CRM oder andere Anwendungen sein. Den Umfang planen wir gemeinsam.",
         },
         {
-          q: "Ist eine betriebsinterne KI auch ohne die gesamte FLX-Plattform möglich?",
-          a: "Ja. Die betriebsinterne KI ist auch als eigenständige Lösung erhältlich.",
+          q: "Ist KI Teil jedes Projekts?",
+          a: "Nein. KI ist optional. Wenn es sinnvoll ist, können wir KI-Funktionen ergänzen, auf Wunsch auch lokal ohne externe KI-Dienste.",
         },
         {
           q: "Was kostet eine individuelle Lösung?",
-          a: "Der Aufwand richtet sich nach Funktionen, Schnittstellen und Projektumfang. Pauschale Paketpreise wären hier nicht seriös. Im Gespräch klären wir den sinnvollen Einstieg für Ihren Betrieb.",
+          a: "Der Aufwand richtet sich nach Funktionen, Schnittstellen und Projektumfang. Pauschale Paketpreise wären hier nicht seriös. Im Gespräch klären wir den sinnvollen Einstieg für Ihr Unternehmen.",
         },
       ],
     },
@@ -418,30 +391,48 @@ export const dictionaries = {
     },
     footer: {
       blurb:
-        "Individuelle Unternehmenssoftware für vernetzte Abläufe – mit Anbindung an Ihr bestehendes ERP und auf Wunsch mit betriebsinterner KI.",
+        "Individuelle Unternehmenssoftware für vernetzte Abläufe, mit optionalen Schnittstellen und KI-Funktionen.",
       nav: "Navigation",
       legal: "Rechtliches",
       impressum: "Impressum",
       privacy: "Datenschutz",
+      privacySettings: "Datenschutzeinstellungen",
       contactTitle: "Kontakt",
       phoneLabel: "Telefon",
       websiteLabel: "Webseite",
       emailLabel: "E-Mail",
       follow: "Folgen Sie uns",
       copyright: "© FLX Software",
-      tagline: "Individuelle Software für Ihren Betrieb",
+      tagline: "Individuelle Software für Ihr Unternehmen",
       links: [
         { href: "#loesungen", label: "Lösungen" },
         { href: "#ueber-uns", label: "Über uns" },
-        { href: "#erp", label: "ERP-Anbindung" },
+        { href: "#moeglichkeiten", label: "Schnittstellen & KI" },
         { href: "#kontakt", label: "Kontakt" },
       ],
+    },
+    privacySettings: {
+      title: "Datenschutzeinstellungen",
+      close: "Schließen",
+      intro:
+        "Auf dieser Website setzen wir derzeit keine Tracking- oder Marketing-Cookies ein. Es gibt daher keine optionalen Einwilligungen zu erteilen oder abzulehnen.",
+      necessaryTitle: "Technisch notwendig",
+      necessaryText:
+        "Die gewählte Sprache wird in Ihrem Browser (LocalStorage) gespeichert, damit die Einstellung erhalten bleibt. Das ist für den Betrieb der Sprachumschaltung erforderlich.",
+      formTitle: "Kontaktformular",
+      formText:
+        "Wenn Sie das Kontaktformular nutzen, werden Ihre Angaben zur Bearbeitung der Anfrage an FormSubmit.co und anschließend an uns übermittelt. Details finden Sie in der Datenschutzerklärung.",
+      hostingTitle: "Hosting",
+      hostingText:
+        "Die Website wird über Vercel bereitgestellt. Dabei können technische Server-Logs entstehen. Nähere Informationen stehen in der Datenschutzerklärung.",
+      privacyLink: "Zur Datenschutzerklärung",
+      note: "Ein Cookie-Banner mit Akzeptieren und Ablehnen ist aktuell nicht erforderlich, weil keine einwilligungspflichtigen Technologien aktiv sind. Sollten später Analyse- oder Marketing-Dienste hinzukommen, wird ein entsprechendes Einwilligungsbanner ergänzt.",
     },
   },
   en: {
     skip: "Skip to content",
     header: {
-      home: "FLX Software – Home",
+      home: "FLX Software, Home",
       navAria: "Main navigation",
       mobileAria: "Mobile navigation",
       openMenu: "Open menu",
@@ -452,15 +443,13 @@ export const dictionaries = {
         { href: "#loesungen", label: "Solutions" },
         { href: "#ablauf", label: "Process" },
         { href: "#ueber-uns", label: "About us" },
-        { href: "#erp", label: "ERP" },
         { href: "#kontakt", label: "Contact" },
       ],
       mobileLinks: [
         { href: "#loesungen", label: "Solutions" },
-        { href: "#ablauf", label: "How FLX works" },
+        { href: "#ablauf", label: "How we work" },
+        { href: "#moeglichkeiten", label: "Integrations & AI" },
         { href: "#ueber-uns", label: "About us" },
-        { href: "#erp", label: "ERP connection" },
-        { href: "#ki", label: "In-house AI" },
         { href: "#kontakt", label: "Contact" },
       ],
     },
@@ -470,33 +459,31 @@ export const dictionaries = {
       en: "English",
     },
     hero: {
-      eyebrow: "Custom software for your operations",
-      titleLine1: "Your operations.",
+      eyebrow: "Custom software for your company",
+      titleLine1: "Your company.",
       titleLine2: "Centrally connected.",
-      lead: "We connect people, information, and workflows in custom software. For individual departments or your entire company – with connection to your existing ERP and optional in-house AI.",
+      lead: "We build custom software that connects people, information, and workflows. For individual departments or your entire company, aligned with the tools you already use.",
       ctaPrimary: "Discuss your project",
       ctaSecondary: "Explore solutions",
       visionAria: "FLX as the hub of connected workflows",
-      sourceLabel: "In operations",
-      sourceCaption: "One situation. Many pieces of information.",
+      sourceLabel: "In everyday work",
       sourceItems: [
         "Details in Excel lists",
         "Photos on the phone",
         "Coordination by email",
       ],
-      hubCaption: "Center of your operations",
+      hubCaption: "Center of your company",
       destLabel: "For your team",
       destItems: [
         "Workflows connected",
         "Information bundled",
         "Move forward with focus",
       ],
-      destCaption: "A clear picture. The next step.",
     },
     problem: {
       eyebrow: "Problem and value",
       title: "Fewer silos. More clarity.",
-      lead: "Many businesses spread daily work across Excel lists, task planners, Word documents, and email threads. FLX brings matching workflows together – without replacing every existing tool by default.",
+      lead: "Many companies spread daily work across Excel lists, task planners, Word documents, and email threads. FLX brings matching workflows together without replacing every existing tool by default.",
       beforeTitle: "Before",
       afterTitle: "With FLX",
       before: [
@@ -511,15 +498,12 @@ export const dictionaries = {
         "Tasks and communication",
         "Finished PDF in company design",
       ],
-      afterNote:
-        "Tasks, communication, and documentation in one place – from manual steps to a continuous digital workflow.",
     },
     departments: {
       eyebrow: "Connected business areas",
       title: "One area or the whole company.",
-      lead: "You define the scope: start with service only, individual workflows – or connect several departments on one shared platform.",
+      lead: "You define the scope: start with service only, individual workflows, or connect several departments on one shared platform.",
       tablist: "Business areas",
-      note: "Not every customer needs the full platform. FLX can be built for one area or for several connected departments.",
       items: [
         {
           id: "fertigung",
@@ -559,7 +543,6 @@ export const dictionaries = {
       ],
     },
     hub: {
-      caption: "Everything runs through FLX – hover an area to open its details.",
       branches: [
         {
           id: "abteilungen",
@@ -597,28 +580,28 @@ export const dictionaries = {
         {
           id: "systeme",
           title: "Systems",
-          items: ["ERP connection", "Interfaces", "Existing tools"],
+          items: ["Interfaces", "Existing tools", "Data exchange"],
         },
         {
           id: "ki",
-          title: "AI",
-          items: ["In-house AI", "Knowledge & insights", "Document assistance"],
+          title: "Extensions",
+          items: ["Optional AI", "Knowledge & insights", "Document assistance"],
         },
       ],
     },
     solutions: {
       eyebrow: "Solutions",
-      title: "Three clear capability areas.",
-      lead: "No rigid standard packages: FLX follows your workflows. ERP connections are planned separately based on your interfaces.",
+      title: "Custom software for everyday work.",
+      lead: "FLX Software builds tailored applications for companies. No rigid standard packages, but solutions that fit your workflows.",
       items: [
         {
           id: "software",
           title: "Custom business software",
-          text: "A shared work platform for tasks, schedules, communication, and documentation – assembled to fit your project.",
+          text: "Web apps, internal admin tools, and work platforms for tasks, schedules, communication, and documentation, assembled to fit your project.",
           points: [
+            "Customer and order management",
             "Assign tasks and make status visible",
             "Organize work and deployment plans",
-            "Bundle documents and images with cases",
             "Role-based overviews for teams and leadership",
           ],
           visualLabel: "Work platform",
@@ -650,33 +633,32 @@ export const dictionaries = {
           reverse: true,
         },
         {
-          id: "ki-teaser",
-          title: "In-house AI",
-          text: "Individually set up AI for approved company knowledge – fully local on request, without external AI services.",
+          id: "anwendungen",
+          title: "Apps for specific requirements",
+          text: "When off-the-shelf software does not fit, we build the right application. From internal tools to digital workflows for concrete specialist areas.",
           points: [
-            "Analyze and summarize documents",
-            "Search internal instructions",
-            "Use ERP data when connected",
-            "Also available independently of the full platform",
+            "Custom web applications",
+            "Internal administration and documentation",
+            "Support for existing workflows",
+            "Extendable step by step",
           ],
-          visualLabel: "Internal knowledge help",
+          visualLabel: "Project scope",
           visualLines: [
-            "Approved sources only",
-            "Local operation possible",
-            "Respect permissions",
-            "Review answers professionally",
+            "Clarify requirements",
+            "Map the workflow",
+            "Build the software",
+            "Roll out in daily use",
           ],
-          cta: { href: "#ki", label: "More about in-house AI" },
+          cta: { href: "#moeglichkeiten", label: "Integrations & optional AI" },
         },
       ],
     },
     damage: {
       eyebrow: "Concrete example",
       title: "From damage to finished report.",
-      lead: "Capture details, add images, generate a PDF – in one continuous workflow. The same principle applies to service, assembly, handover, maintenance, and inspection reports.",
+      lead: "Capture details, add images, generate a PDF in one continuous workflow. The same principle applies to service, assembly, handover, maintenance, and inspection reports.",
       formTitle: "Damage report",
-      formSubtitle: "Guided workflow · assign to case",
-      badge: "Example view",
+      badge: "Demo",
       device: "Device",
       customer: "Customer",
       date: "Return date",
@@ -686,8 +668,6 @@ export const dictionaries = {
       photos: "Photos",
       photoLabels: ["Housing detail", "Clamp area", "Overview"],
       exampleImage: "Sample image",
-      photoNote:
-        "Fictional sample data. Existing device and customer data can be reused when connected.",
       submit: "Generate PDF",
       flowEyebrow: "Workflow",
       steps: [
@@ -698,14 +678,12 @@ export const dictionaries = {
         "Generate PDF",
         "Send or print the report",
       ],
-      flowNote:
-        "The report with images stays attached to the case – traceable and consistently formatted.",
-      previewBadge: "Sample preview",
+      previewBadge: "Demo",
       previewTitle: "Damage report (simulation)",
       close: "Close",
       closeAria: "Close preview",
       previewNote:
-        "This is a simulated preview. No file is created and no email is sent.",
+        "Simulated preview. No file is created and no email is sent.",
       photosAssigned: "Photos: 3 sample images assigned to the case",
       initial: {
         device: "Clamp ZX-240",
@@ -714,60 +692,47 @@ export const dictionaries = {
           "Housing damaged, clamping force limited. Device returned after customer use.",
       },
     },
-    erp: {
-      eyebrow: "ERP connection",
-      title: "Your ERP stays. Your workflows get connected.",
-      lead: "FLX currently does not build its own ERP. Existing systems remain in place and can be connected through suitable interfaces.",
-      note: "Concrete integrations depend on your system and its interfaces. We plan the scope of data exchange together.",
-      existingErp: "Existing ERP",
-      interfaces: "Interfaces / data flows",
-      platform: "FLX work platform",
-      areas: ["Service", "Assembly", "Warehouse", "Production", "Sales", "Leadership"],
-      flows: [
-        "Use existing data in operational workflows",
-        "Reduce duplicate data entry",
-        "Provide information where employees need it",
-        "Reduce media breaks and manual transfers",
-        "Read and write data depending on the interface",
+    extras: {
+      eyebrow: "Additional options",
+      title: "Integrations and optional AI.",
+      lead: "On request we integrate AI features or build interfaces to your existing tools. Whether ERP, inventory, CRM, or other software: we check how the applications can connect usefully.",
+      interfaceTitle: "Possible connections",
+      interfaces: [
+        "ERP systems",
+        "Inventory / warehouse systems",
+        "CRM",
+        "Document management",
+        "Other existing applications",
       ],
-    },
-    ai: {
-      eyebrow: "In-house AI",
-      title: "AI that works with your company knowledge.",
-      lead: "Individually set up for approved data and tasks. Fully local on request – without external AI services.",
-      quote: "“Your company knowledge. Your infrastructure. Your internal AI.”",
-      capabilities: [
-        "Analyze texts and documents",
-        "Extract and summarize key content",
-        "Search work instructions and company knowledge",
-        "Answer questions about approved information",
-        "Make data from a connected ERP usable",
-        "Also available as a standalone solution",
+      aiTitle: "Optional AI features",
+      aiText:
+        "When it fits your project, we can set up AI features, for example for approved company knowledge. Fully local on request, without external AI services.",
+      aiPoints: [
+        "Summarize and search documents",
+        "Make internal instructions usable",
+        "Also as an add-on to an existing application",
       ],
-      disclaimer:
-        "Access rights are respected. AI answers are not guaranteed to be correct. FLX does not train base models from scratch – the focus is individually set up and integrated solutions.",
-      helperTitle: "Internal knowledge help",
+      helperTitle: "Example: knowledge help",
       demo: "Demo",
+      simulatedLabel: "Simulated sample answer",
       example: "Example",
       question: "Question",
       answer: "Answer",
-      demoNote:
-        "Marketing demo without uploading real company data and without paid AI calls.",
       demos: [
         {
           q: "Which steps apply for a device return with damage?",
-          a: "Sample answer: First open the case, capture the damage and images, generate the report, and attach it to the case. Approved work instructions from your company would serve as the basis here.",
+          a: "First open the case, capture the damage and images, generate the report, and attach it to the case. Approved work instructions from your company would serve as the basis here.",
         },
         {
           q: "Summarize the latest maintenance report.",
-          a: "Sample answer: The AI summarizes approved documents and highlights open items. Answers can be incomplete or incorrect and do not replace professional review.",
+          a: "The AI summarizes approved documents and highlights open items. Answers can be incomplete or incorrect and do not replace professional review.",
         },
       ],
     },
     collab: {
       eyebrow: "Collaboration",
       title: "How your solution takes shape.",
-      lead: "Clear steps – from understanding your workflows to rollout in operations.",
+      lead: "Clear steps, from understanding your workflows to rollout in your company.",
       step: "Step",
       steps: [
         {
@@ -776,7 +741,7 @@ export const dictionaries = {
         },
         {
           title: "Plan solution and interfaces",
-          text: "Together we define scope, priorities, and possible ERP connections based on available interfaces.",
+          text: "Together we define scope, priorities, and possible connections to your existing systems.",
         },
         {
           title: "Build and refine the software",
@@ -784,7 +749,7 @@ export const dictionaries = {
         },
         {
           title: "Roll out and extend as needed",
-          text: "After rollout, FLX can grow with more areas, forms, or in-house AI.",
+          text: "After rollout, the software can grow with more areas, forms, or optional AI features.",
         },
       ],
     },
@@ -792,8 +757,8 @@ export const dictionaries = {
       eyebrow: "About us",
       title: "Personal. Close. Solution-focused.",
       paragraphs: [
-        "We develop digital solutions that not only look modern, but actually work in everyday operations.",
-        "Since 2022 we have been building web apps, mobile applications, and custom software solutions for regional companies. We focus on simple usability, clear structures, and solutions that fit the workflows of each business.",
+        "We develop digital solutions that not only look modern, but actually work in everyday use.",
+        "Since 2022 we have been building web apps, mobile applications, and custom software for regional companies. We focus on simple usability, clear structures, and solutions that fit the workflows of each company.",
         "Instead of off-the-shelf standard software, we rely on personal collaboration, short paths, and long-term support.",
       ],
       photoAlt: "The managing directors of FLX Software",
@@ -804,8 +769,8 @@ export const dictionaries = {
       title: "Common questions.",
       items: [
         {
-          q: "Do we have to replace our existing ERP?",
-          a: "No. FLX currently does not build its own ERP. Existing systems can be connected through suitable interfaces. The concrete data exchange depends on your system and its interfaces.",
+          q: "What kind of software do you build?",
+          a: "Custom software for companies: web applications, internal tools, digital forms, document generation, and apps for concrete workflows. Scope depends on your project.",
         },
         {
           q: "Can we start with just one department?",
@@ -813,23 +778,23 @@ export const dictionaries = {
         },
         {
           q: "Will the software be adapted to our workflows?",
-          a: "Yes. FLX is tailored to your processes and requirements – not a rigid standard product with fixed packages.",
+          a: "Yes. FLX is tailored to your processes and requirements, not a rigid standard product with fixed packages.",
         },
         {
           q: "Can forms automatically become PDF documents?",
           a: "Yes. Captured details, images, and related information can become a finished PDF in your company design and be attached to the case.",
         },
         {
-          q: "Can the AI run fully on our own hardware?",
-          a: "Yes, on request. In-house AI can run locally – without external AI services. Access rights and approved data sources are taken into account.",
+          q: "Can existing tools be connected?",
+          a: "Yes, when suitable interfaces are available. That can include ERP, inventory, CRM, or other applications. We plan the scope together.",
         },
         {
-          q: "Is in-house AI available without the full FLX platform?",
-          a: "Yes. In-house AI is also available as a standalone solution.",
+          q: "Is AI part of every project?",
+          a: "No. AI is optional. When it makes sense, we can add AI features, locally on request without external AI services.",
         },
         {
           q: "What does a custom solution cost?",
-          a: "Effort depends on features, interfaces, and project scope. Flat package prices would not be serious here. In a conversation we clarify a sensible starting point for your business.",
+          a: "Effort depends on features, interfaces, and project scope. Flat package prices would not be serious here. In a conversation we clarify a sensible starting point for your company.",
         },
       ],
     },
@@ -851,24 +816,42 @@ export const dictionaries = {
     },
     footer: {
       blurb:
-        "Custom business software for connected workflows – with connection to your existing ERP and optional in-house AI.",
+        "Custom business software for connected workflows, with optional integrations and AI features.",
       nav: "Navigation",
       legal: "Legal",
       impressum: "Imprint",
       privacy: "Privacy",
+      privacySettings: "Privacy settings",
       contactTitle: "Contact",
       phoneLabel: "Phone",
       websiteLabel: "Website",
       emailLabel: "Email",
       follow: "Follow us",
       copyright: "© FLX Software",
-      tagline: "Custom software for your operations",
+      tagline: "Custom software for your company",
       links: [
         { href: "#loesungen", label: "Solutions" },
         { href: "#ueber-uns", label: "About us" },
-        { href: "#erp", label: "ERP connection" },
+        { href: "#moeglichkeiten", label: "Integrations & AI" },
         { href: "#kontakt", label: "Contact" },
       ],
+    },
+    privacySettings: {
+      title: "Privacy settings",
+      close: "Close",
+      intro:
+        "This website currently does not use tracking or marketing cookies. There are therefore no optional consents to accept or decline.",
+      necessaryTitle: "Technically necessary",
+      necessaryText:
+        "Your selected language is stored in your browser (localStorage) so the preference is kept. This is required for the language switcher to work.",
+      formTitle: "Contact form",
+      formText:
+        "If you use the contact form, your details are sent via FormSubmit.co and then to us for processing. See the privacy policy for details.",
+      hostingTitle: "Hosting",
+      hostingText:
+        "The website is hosted on Vercel. Technical server logs may be created. More information is available in the privacy policy.",
+      privacyLink: "Go to privacy policy",
+      note: "A cookie banner with accept and decline is currently not required because no consent-required technologies are active. If analytics or marketing services are added later, a corresponding consent banner will be introduced.",
     },
   },
 } as const;
