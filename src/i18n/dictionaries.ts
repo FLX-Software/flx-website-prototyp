@@ -383,11 +383,13 @@ export const dictionaries = {
       message: "Kurze Beschreibung des Vorhabens",
       submit: "Anfrage senden",
       invalid: "Bitte füllen Sie alle Felder aus.",
-      sending: "Wird gesendet …",
+      sending: "Ihre Anfrage wird gesendet …",
       success:
         "Vielen Dank. Ihre Anfrage wurde übermittelt. Wir melden uns in Kürze.",
       error:
-        "Die Anfrage konnte nicht gesendet werden. Bitte schreiben Sie uns direkt an info@flx-software.de.",
+        "Ihre Anfrage konnte leider nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie direkt an info@flx-software.de.",
+      uncertain:
+        "Der Versand konnte nicht bestätigt werden. Bitte prüfen Sie Ihr Postfach auf eine eventuelle Bestätigung oder schreiben Sie direkt an info@flx-software.de.",
     },
     footer: {
       blurb:
@@ -809,10 +811,12 @@ export const dictionaries = {
       message: "Brief description of your project",
       submit: "Send inquiry",
       invalid: "Please fill in all fields.",
-      sending: "Sending …",
+      sending: "Your inquiry is being sent …",
       success: "Thank you. Your inquiry was sent. We will get back to you shortly.",
       error:
-        "Your inquiry could not be sent. Please email us directly at info@flx-software.de.",
+        "Your inquiry could not be sent. Please try again or email us directly at info@flx-software.de.",
+      uncertain:
+        "We could not confirm whether your inquiry was sent. Please check for a possible confirmation or email us directly at info@flx-software.de.",
     },
     footer: {
       blurb:

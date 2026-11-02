@@ -1,18 +1,24 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { company } from "@/lib/company";
+import { submitContactForm } from "@/lib/formSubmit";
 
-type Status = "idle" | "invalid" | "sending" | "success" | "error";
+type Status = "idle" | "invalid" | "sending" | "success" | "error" | "uncertain";
 
 export function Contact() {
   const { t } = useLocale();
   const c = t.contact;
   const [status, setStatus] = useState<Status>("idle");
+  const submittingRef = useRef(false);
 
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (submittingRef.current) {
+      return;
+    }
+
     const form = event.currentTarget;
     const data = new FormData(form);
     const name = String(data.get("name") ?? "").trim();
@@ -25,36 +31,31 @@ export function Contact() {
       return;
     }
 
+    submittingRef.current = true;
     setStatus("sending");
 
     try {
-      const response = await fetch(company.formSubmitEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          company: companyName,
-          email,
-          message,
-          _replyto: email,
-          _subject: `Anfrage von ${name} (flx-software.de)`,
-          _template: "table",
-          _captcha: "false",
-          _honey: "",
-        }),
+      const result = await submitContactForm({
+        name,
+        company: companyName,
+        email,
+        message,
       });
 
-      if (!response.ok) {
-        throw new Error("FormSubmit failed");
+      if (result.status === "accepted") {
+        form.reset();
+        setStatus("success");
+        return;
       }
 
-      form.reset();
-      setStatus("success");
-    } catch {
+      if (result.status === "uncertain") {
+        setStatus("uncertain");
+        return;
+      }
+
       setStatus("error");
+    } finally {
+      submittingRef.current = false;
     }
   };
 
@@ -106,7 +107,12 @@ export function Contact() {
                 <textarea name="message" rows={5} required />
               </label>
 
-              <button type="submit" className="btn btn-primary" disabled={status === "sending"}>
+              <button
+                type="submit"
+                className="btn btn-primary"
+                disabled={status === "sending"}
+                aria-busy={status === "sending"}
+              >
                 {status === "sending" ? c.sending : c.submit}
               </button>
 
@@ -123,6 +129,11 @@ export function Contact() {
               {status === "error" ? (
                 <p className="contact-msg contact-msg--error" role="alert">
                   {c.error}
+                </p>
+              ) : null}
+              {status === "uncertain" ? (
+                <p className="contact-msg contact-msg--error" role="alert">
+                  {c.uncertain}
                 </p>
               ) : null}
             </form>

@@ -45,13 +45,17 @@ export const metadata: Metadata = {
       },
     ],
   },
+  // favicon.ico comes from src/app/favicon.ico (Next.js file convention → /favicon.ico).
+  // Extra stable public icons for Google (48x48+) and iOS/Android.
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    icon: [{ url: "/icons/icon-48.png", sizes: "48x48", type: "image/png" }],
+    apple: [
+      {
+        url: "/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
     ],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/site.webmanifest",
 };
