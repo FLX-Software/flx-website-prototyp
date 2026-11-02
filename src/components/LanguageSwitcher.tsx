@@ -22,7 +22,7 @@ function FlagDe() {
 
 function FlagUs() {
   const stripe = 24 / 13;
-  // Weniger, aber größere Sterne – bei kleiner Größe besser lesbar
+  // Weniger, aber größere Sterne: bei kleiner Größe besser lesbar
   const stars: Array<[number, number]> = [
     [2.2, 2.1],
     [5.2, 2.1],

@@ -24,7 +24,7 @@ export function Problem() {
               {p.before.map((item) => (
                 <li key={item}>
                   <span className="mark mark-muted" aria-hidden="true">
-                    –
+                    •
                   </span>
                   <span>{item}</span>
                 </li>
@@ -43,9 +43,6 @@ export function Problem() {
                 </li>
               ))}
             </ul>
-            <p className="mb-0 mt-5 text-[0.98rem] text-[var(--color-muted)]">
-              {p.afterNote}
-            </p>
           </div>
         </div>
       </div>

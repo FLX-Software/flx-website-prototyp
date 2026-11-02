@@ -38,8 +38,7 @@ export function Departments() {
 
         <div className="dept-detail" role="tabpanel" aria-label={current.label}>
           <h3 className="mb-2 mt-0 text-xl">{current.label}</h3>
-          <p className="mb-3 text-[var(--color-muted)]">{current.text}</p>
-          <p className="m-0 text-[0.98rem] text-[var(--color-muted)]">{d.note}</p>
+          <p className="m-0 text-[var(--color-text)]">{current.text}</p>
         </div>
 
         <PlatformMap />

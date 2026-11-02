@@ -25,6 +25,15 @@ export function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+
   return (
     <header className="site-header" data-scrolled={scrolled}>
       <div className="header-bar container py-3.5">
@@ -39,7 +48,7 @@ export function Header() {
             alt="FLX Software"
             width={280}
             height={72}
-            className="h-10 w-auto sm:h-11"
+            className="header-logo"
             priority
           />
         </Link>
@@ -61,7 +70,7 @@ export function Header() {
 
         <div className="header-bar-actions flex items-center justify-end gap-2 sm:gap-3">
           <LanguageSwitcher />
-          <a href="#kontakt" className="btn btn-primary btn-header hidden sm:inline-flex">
+          <a href="#kontakt" className="btn btn-primary btn-header">
             {t.header.cta}
           </a>
           <button

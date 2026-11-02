@@ -20,6 +20,7 @@ npm run dev
 
 ## Hinweise
 
-- Impressum und Datenschutz sind als Platzhalter gekennzeichnet.
-- Kontaktformular hat noch keinen Versand (keine Empfängeradresse hinterlegt).
+- Kontaktformular sendet über FormSubmit an `info@flx-software.de`.
 - Markenlogos liegen unter `public/brand/` und werden unverändert verwendet.
+- Derzeit keine Tracking-Cookies; Datenschutzeinstellungen im Footer.
+- Offene rechtliche Prüfpunkte: `docs/privacy-legal-checklist.md`.

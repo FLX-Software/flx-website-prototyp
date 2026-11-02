@@ -66,7 +66,6 @@ export function Hero() {
                 </div>
               ))}
             </div>
-            <p className="hero-vision-caption">{h.sourceCaption}</p>
           </div>
 
           <FlowArrow />
@@ -78,7 +77,7 @@ export function Hero() {
                 alt="FLX Software"
                 width={220}
                 height={220}
-                className="h-[6rem] w-[6rem] object-contain sm:h-[7.25rem] sm:w-[7.25rem]"
+                className="h-[5.25rem] w-[5.25rem] object-contain sm:h-[7.25rem] sm:w-[7.25rem]"
                 priority
               />
             </div>
@@ -107,7 +106,6 @@ export function Hero() {
                 {h.destItems[2]}
               </div>
             </div>
-            <p className="hero-vision-caption">{h.destCaption}</p>
           </div>
         </div>
       </div>

@@ -40,7 +40,7 @@ export function Contact() {
           email,
           message,
           _replyto: email,
-          _subject: `Anfrage von ${name} – flx-software.de`,
+          _subject: `Anfrage von ${name} (flx-software.de)`,
           _template: "table",
           _captcha: "false",
           _honey: "",

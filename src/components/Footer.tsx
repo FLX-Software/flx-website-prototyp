@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import { PrivacySettings } from "@/components/PrivacySettings";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { company } from "@/lib/company";
 
@@ -34,6 +36,7 @@ function IconLinkedIn() {
 export function Footer() {
   const { t } = useLocale();
   const f = t.footer;
+  const [privacyOpen, setPrivacyOpen] = useState(false);
 
   return (
     <footer className="site-footer">
@@ -133,6 +136,15 @@ export function Footer() {
             <li>
               <Link href="/datenschutz">{f.privacy}</Link>
             </li>
+            <li>
+              <button
+                type="button"
+                className="footer-privacy-btn"
+                onClick={() => setPrivacyOpen(true)}
+              >
+                {f.privacySettings}
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
@@ -143,6 +155,8 @@ export function Footer() {
           <p>{f.tagline}</p>
         </div>
       </div>
+
+      <PrivacySettings open={privacyOpen} onClose={() => setPrivacyOpen(false)} />
     </footer>
   );
 }

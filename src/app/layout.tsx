@@ -28,11 +28,11 @@ export const metadata: Metadata = {
     template: "%s | FLX Software",
   },
   description:
-    "FLX Software verbindet Menschen, Informationen und Arbeitsabläufe in individueller Software – mit ERP-Anbindung und optional betriebsinterner KI.",
+    "FLX Software entwickelt individuelle Unternehmenssoftware: Webanwendungen, interne Tools, digitale Formulare und Vernetzung bestehender Abläufe.",
   openGraph: {
     title: "FLX Software | Individuelle Unternehmenssoftware",
     description:
-      "Eine zentrale Plattform für Ihren Betrieb. Individuell auf Ihre Abläufe abgestimmt.",
+      "Individuelle Software für Ihr Unternehmen. Abgestimmt auf Ihre Abläufe und bestehenden Programme.",
     locale: "de_DE",
     type: "website",
     url: "https://www.flx-software.de",
