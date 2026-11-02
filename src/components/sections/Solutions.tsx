@@ -1,5 +1,6 @@
 "use client";
 
+import { SolutionVisual } from "@/components/SolutionVisual";
 import { useLocale } from "@/i18n/LocaleProvider";
 
 export function Solutions() {
@@ -51,17 +52,7 @@ export function Solutions() {
                 ) : null}
               </div>
               <div className="solution-visual" aria-hidden="true">
-                <p className="label">{item.visualLabel}</p>
-                <div className="grid gap-2">
-                  {item.visualLines.map((line) => (
-                    <div
-                      key={line}
-                      className="rounded-lg border border-white/10 bg-white/5 px-3 py-2.5 text-sm"
-                    >
-                      {line}
-                    </div>
-                  ))}
-                </div>
+                <SolutionVisual id={item.id} label={item.visualLabel} />
               </div>
             </article>
           ))}
